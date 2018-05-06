@@ -1,0 +1,8 @@
+# Refuser les images
+*.jpg
+*.jpeg
+*.png
+/images
+
+# test de git checkout
+/images

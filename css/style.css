@@ -1,0 +1,516 @@
+/*-------------------------------------------------------------*/
+/*|                                                           |*/
+/*|*/            /*CSS du site*/                            /*|*/
+/*|                                                           |*/
+/*-------------------------------------------------------------*/
+@font-face {
+    font-family: 'Overseer'
+    src: url('font/Overseer/Overseer.otf') format('otf');
+} 
+    
+
+html {
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(ellipse at top left,rgba(15, 198, 191, 0.65) ,teal);
+}
+
+h1,
+h2,h3 {
+    font-family: 'droid_sansregular', 'Arial', sans-serif;
+}
+
+h1,
+h1+p {
+    text-align: center;
+}
+
+
+h3 {
+    color: black;
+}
+
+h3:hover {
+    background-color: rgba(255, 146, 0, 0.6);
+}
+
+/*h1 {
+    color: rgba(0, 255, 20, 0.75);
+    background-color: rgba(0, 29, 255, 0.29);
+    border: 1px rgba(0, 29, 255, 0) solid;
+    border-radius: 20px/10px;
+}*/
+
+p {
+    color: black;
+}
+
+ul,
+li {
+    color: black;
+}
+
+p:hover {
+    background-color: rgb(223, 175, 44);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+ul li:hover {
+    background-color: rgb(223, 175, 44);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-right: 0%;
+    padding-left: 4%;
+}
+
+#liseret,
+#contenu {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#liseret {
+    width: 2%;
+    margin-right: 0%;
+    height: 300px;
+    background-image: url('images/lodyas.png');
+    border-radius: 10px;
+}
+
+#contenu {
+    display: block;
+    margin: auto;
+    width: 95%;
+    margin-top: -250px;
+    min-height: 600px;
+}
+
+ /*-------------------------------------------------------------*/
+/*|                                                             |*/
+/*|*/            /*Adaptation du site en responsive */        /*|*/
+/*|                                                             |*/
+ /*-------------------------------------------------------------*/
+
+@media all and (max-width: 600px)
+{
+    section
+    {
+        display: block;
+        width: auto;
+    }
+
+    #liseret
+    {
+        display: none;
+    }
+
+    #contenu
+    {
+        width: auto;
+    }
+}
+
+/*-------------------------------------------------------------*/
+/*|                                                           |*/
+/*|*/            /*CSS de la page principale*/              /*|*/
+/*|                                                           |*/
+/*-------------------------------------------------------------*/
+
+ body{
+     font-family: 'droid_sansregular', 'Arial', sans-serif;
+     margin: 0px;
+     padding: 0px;
+ }
+
+/*-------------------------------------------------------------*/
+/*|                                                           |*/
+/*|*/            /*CSS du MENU */                           /*|*/
+/*|                                                           |*/
+/*-------------------------------------------------------------*/
+
+ nav{
+     width: 100%;
+     background: url(../images/background-footer.png);
+     position: sticky;
+     top: 0;
+     z-index: 1;
+ }
+
+ nav > ul {
+     margin: 0px;
+     padding: 0px;
+ }
+
+ nav li{
+     list-style-type: none;
+ }
+
+ nav > ul >li{
+     float: left;
+     position: relative;
+ }
+
+ nav > ul::after{
+     content: "";
+     display: table;
+     clear: both;
+
+ }
+
+ .submenu{
+     display: none;
+ }
+ nav input[type=checkbox]{
+     display: none;
+ }
+
+ nav label{
+     display: none;
+ }
+
+ nav a{
+     display: inline-block;
+     text-decoration: none;
+ }
+
+ nav > ul > li >a{
+     padding: 20px 30px;
+     color: #fff;
+ }
+
+ nav > ul > li >a:hover {
+     padding: 15px 30px 20px 30px;
+ }
+
+ nav li:hover .submenu{
+     display: inline-block;
+     position: absolute;
+     top: 100%;
+     left: 0px;
+     padding: 0px;
+     z-index: 1000;
+ }
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+
+.submenu li{
+    border-bottom: 1px solid #CCC;
+}
+
+.menu-html:hover{
+     border-top: 5px solid #e44d26;
+     background-color: RGBa(228,77,38, 0.15);
+ }
+
+ .menu-css:hover{
+     border-top: 5px solid #0070bb;
+     background-color: RGBa(000,112,192, 0.15);
+ }
+
+ .menu-js:hover{
+     border-top: 5px solid #f1dc4f;
+     background-color: RGBa(241,211,79, 0.15);
+ }
+
+ .menu-contact:hover{
+     border-top: 5px solid #BBB;
+     background-color: RGBa(220,220,220, 0.15);
+ }
+
+ .menu-html .submenu{
+      background-color: RGB(230,100,40);
+  }
+
+ .menu-css .submenu{
+     background-color: RGB(000,160,240);
+ }
+
+ .menu-js .submenu{
+     background-color: RGB(250,215,100);
+ }
+
+ .submenu li:hover a{
+     color: #EEE;
+     font-weight: bold;
+ }
+
+ .menu-html .submenu li:hover{
+     background-color: RGB(210, 77, 60);
+ }
+
+ .menu-css .submenu li:hover{
+     background-color: RGB(000, 115, 200);
+ }
+ .menu-js .submenu li:hover{
+     background-color: RGB(200, 165, 75);
+ }
+
+ nav input[type=checkbox]:checked ~ ul{
+     display: block;
+ }
+
+/*-------------------------------------------------------------*/
+/*|                                                           |*/
+/*|*/            /*Partie responsive du MENU */             /*|*/
+/*|                                                           |*/
+/*-------------------------------------------------------------*/
+
+@media all and (max-width: 600px){
+    .menu-mobile{
+        display: block;
+        color: #FFF;
+        background-color: RGBa(29, 197, 151, 0.97);
+        text-align: center;
+        padding: 12px 0px;
+        cursor: pointer;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav ul li, nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a, nav ul li:hover a{
+        padding: 10px 0px;
+    }
+
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+}
+
+/*-------------------------------------------------------------*/
+/*|                                                           |*/
+/*|*/            /*CSS de la carte*/                        /*|*/
+/*|                                                           |*/
+/*-------------------------------------------------------------*/
+
+ #map {
+        margin: auto; 
+        padding: auto;
+        height: 500px;
+        width: 500px;
+      }
+
+
+/*-------------------------------------------------------------*/
+/*|                                                           |*/
+/*|*/            /*CSS du slider*/                          /*|*/
+/*|                                                           |*/
+/*-------------------------------------------------------------*/
+ 
+
+@keyframes slider{
+    
+    0%{
+        left: 50%;
+    }
+    
+    20%{
+        left: 0%;
+    }
+    
+    40%{
+        left: -100%;
+    }
+    
+    60%{
+        left: -200%;
+    }
+    
+    80%{
+        left: -300%;
+    }
+    
+     100%{
+        left: -400%;
+    }
+}
+
+
+
+#slider{
+    overflow: hidden;
+    height: 500px;
+    width: auto;
+    margin:auto;
+}
+
+#slider figure img{
+    width: 20%;
+    float: left;
+    }
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slider infinite;
+}
+
+img{
+    max-height: 500px;
+}
+/*-------------------------------------------------------------*/
+/*|                                                           |*/
+/*|*/            /*responsive du slider*/                   /*|*/
+/*|                                                           |*/
+/*-------------------------------------------------------------*/
+
+@media all and (max-width: 600px)
+{
+    @keyframes slider{
+    0%{
+        left: 50%;
+    }
+    
+    20%{
+        left: 0%;
+    }
+    
+    40%{
+        left: -100%;
+    }
+    
+    60%{
+        left: -200%;
+    }
+    
+    80%{
+        left: -300%;
+    }
+    
+     100%{
+        left: -400%;
+    }
+}
+
+
+#slider{
+    overflow: hidden;
+    width: 800px;
+    margin:auto;
+    background-color: rgba(15, 198, 191, 0.38);
+}
+
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slider infinite;
+    
+}
+
+div > figure > img{
+    max-height: 500px;
+}
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+/*|                                                                                      |*/
+/*|*/          /*Partie afficher/masquer le texte de "partie"programmation""*/         /*|*/
+/*|                                                                                      |*/
+/*----------------------------------------------------------------------------------------*/
+.form-bouton{
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-bottom: -10px;
+}
+.bouton{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #333333;
+    border: 2px solid yellow;
+    color: yellow;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.bouton:hover{
+    color: white;
+    border: 2px solid white;
+    transition-duration: 1s;
+}
+
+/*-------------------------------------------------------------*/
+/*|                                                           |*/
+/*|*/                   /*CSS du header*/                   /*|*/
+/*|                                                           |*/
+/*-------------------------------------------------------------*/
+
+header{
+    background-color: rgba(125, 159, 0, 0.18);
+    height: 65px;
+    width: auto;
+    margin: auto;
+}
+    
+.img_header {
+    position: relative;
+    height: 60px;
+    width: auto;
+    margin: auto;
+}
+
+header > a >  #centre_img {
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Overseer';
+    text-align: center;    
+}
+
+/*-------------------------------------------------------------*/
+/*|                                                           |*/
+/*|*/            /*Partie responsive du header */             /*|*/
+/*|                                                           |*/
+/*-------------------------------------------------------------*/
+
+@media all and (max-width: 600px){
+    
+    .img_header {
+    position: relative;
+    height: 45px;
+    width: auto;
+    margin: auto;
+}
+    
+}
+
+article{
+    text-align: justify;
+    font-size: 110%;
+}
+article span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}

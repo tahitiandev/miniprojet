@@ -1,0 +1,151 @@
+#contenu{
+    margin: 0;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    font-family: 'Sniglet', cursive;
+    font-size: 110%;
+    background: #F3E2A9;
+    box-shadow: 0px 0px 35px inset black;
+    margin-top: -280px;
+    margin-bottom: 60px;
+    padding: 20px; 
+}
+.presentation{
+    font-size: 18px;
+}
+.presentation:hover{
+    background: none;
+    font-weight: normal;
+    padding: 0;
+    font-size: 18px;
+}
+#contenu section p{
+    font-size: 18px;
+}
+#contenu section p:hover{
+    background: none;
+    font-weight: normal;
+    padding: 0;
+    font-size: 18px;
+}
+.source a{
+    color: blue;
+    text-decoration: underline blue;
+    transition-duration: 2s;
+}
+.source a:hover{
+    transition-duration: 2s;
+    color: red;
+
+}
+#contenu section h2{
+    width: 70%;
+    background: red;
+    padding: 1%;
+    padding-left: 5%;
+    transform: rotate(-1deg);
+    margin-left: -60px;
+    color: yellow;
+    transition-duration: 1s;
+    box-shadow: 0px 0px 20px black inset;
+}
+#contenu section h2:hover{
+    transform: rotate(1deg);
+    transition-duration: 1s;
+}
+#contenu section{
+    padding: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
+
+}
+#contenu section img{
+    display: block;
+    margin: auto;
+}
+#contenu section textarea{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 150px;
+    background: black;
+    color: yellow;
+    text-align: left;
+    padding: 5px; 
+    font-size: 110%;
+}
+#contenu canvas{
+	width: 80%;
+	display: block;
+	margin: auto;
+	border: 1px solid; 
+}
+
+@media screen and (max-width: 800px){
+    #contenu{
+        margin-right: 0;
+        margin-left: 0;
+        width: 95%;
+        display: block;
+        margin: auto;
+        margin-top: -300px;
+        margin-bottom: 60px;
+    }
+    #contenu section h2{
+        width: 110%;
+        transition-duration: 1s;
+        transform: rotate(0deg);
+        margin-left: -20px;
+        padding: 2%;
+        padding-left: 10%;
+    }
+    #contenu section{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    #contenu section img{
+        display: block;
+        width: 100%;
+    }
+    #contenu section textarea{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px){
+    #contenu{
+        margin-right: 0;
+        margin-left: 0;
+        width: 95%;
+        display: block;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+}
+
+/*F148 : Article A2 avec Date mise à jour fichier (copie ecran page)*/
+#dateMajPageA2{
+    width: 200px;
+    border: 1px solid;
+    padding: 5px;
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    height: 50px;
+    background: black;
+    color: #ffffff;
+}
+#img-presentation-prog{
+    width: 100%;
+    height: 400px;
+    background:center;
+    background-attachment: fixed;
+}
+#img-presentation-design{
+    width: 100%;
+    height: 400px;
+    background: url("../images/slider/Adobe.jpg") center;
+    background-attachment: fixed;
+}

@@ -1,0 +1,31 @@
+/**
+
+	Developpeur : Gilles HEITAA
+	Date : 13/11/2017
+	Objet : Mise en forme de la page reception-contact.php
+
+*
+*/
+#recap{
+}
+#recap h2{
+	text-align: center;
+	font-family: arial;
+}
+#recap table{
+	margin: auto;
+	width: 50%;
+	margin-bottom: 50px;
+	border: 2px solid blue;
+	border-radius: 10px;
+	padding: 3%;
+}
+.tab-objet{
+	width: 200px;
+	color: blue;
+	font-weight: bold;
+}
+.tab-objet:nth-child(1){
+	height: 50px;
+	line-height: 50px;
+}

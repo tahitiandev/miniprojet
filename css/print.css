@@ -1,0 +1,29 @@
+#liseret, #impression,.form-bouton, .bouton, footer, .menu-mobile{
+    display : none;
+}
+
+section{
+    display: block;
+    width: auto;
+}
+#contenu{
+    margin-top: -10px;
+    width: auto;
+}
+#contenu h1{
+    color: blue;
+}
+#contenu section h2{
+    width: 70%;
+    background: none;
+    padding: 1%;
+    padding-left: 5%;
+    transform: rotate(0deg);
+    margin-left: -60px;
+    color: black;
+    box-shadow: none;
+}
+#contenu section textarea{
+    color: black;
+    border: 1px solid black;
+}

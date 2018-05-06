@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TABLE</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+/****************************
+*
+		SANS Relation
+*
+****************************/
+
+<h3>message</h3>
+<ul>
+	<li>idmsg</li>
+	<li>nom</li>
+	<li>telephone</li>
+	<li>email</li>
+	<li>sujet</li>
+	<li>message</li>
+	<li>receptionDate</li>
+	<li>receptionHeure</li>
+</ul>
+
+<h3>user</h3>
+<ul>
+	<li>iduser</li>
+	<li>login</li>
+	<li>password</li>
+	<li>nom</li>
+	<li>prenom</li>
+	<li>profil</li>
+</ul>
+
+
+/****************************
+*
+		AVEC Relation
+*
+****************************/
+
+<h3>rubrique</h3>
+<ul>
+	<li>idrub</li>
+	<li>intitulerub</li>
+	<li>descriptionrub</li>
+	<li>imagerub</li>
+	<li>coderub</li>
+</ul>
+
+<h3>article</h3>
+<ul>
+	<li>idart</li>
+	<li>titreart</li>
+	<li>descriptionart</li>
+	<li>codeart</li>
+	<li><mark>rubrique => rubrique(idrub)</mark></li>
+</ul>
+
+<h3>titre</h3>
+<ul>
+	<li>idtitre</li>
+	<li>libelletitre</li>
+	<li>ordretitre</li>
+	<li><mark>article =>article(idart)</mark></li>
+</ul>
+
+<h3>detail</h3>
+<ul>
+	<li>iddet</li>
+	<li>descriptiondeg</li>
+	<li>imagedet</li>
+	<li><mark>titre => titre(idtitre)</mark></li>
+</ul>
+
+</body>
+</html>

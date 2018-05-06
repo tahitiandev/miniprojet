@@ -1,0 +1,143 @@
+/**
+
+	Contenu : css de la page mentions legales
+
+*
+*/
+
+#link-mentions-legales{
+	color: #04B404;
+	text-decoration: underline #04B404;
+	transition-duration: 2s;
+}
+
+#link-mentions-legales:hover{
+	transition-duration: 2s;
+	color: red;
+}
+#mentions-legales1{
+	width: 60%;
+	margin-left: 15%;
+	margin-bottom: 4%;
+	margin-top: 4%;
+	padding-top: 1px;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-bottom: 2%;
+	transform: rotate(1deg);
+	background: #F3E2A9;
+	box-shadow: 0px 0px 35px inset black;
+	transition-duration: 1s;
+}
+#mentions-legales2{
+	transform: rotate(-1deg);
+}
+#mentions-legales2 h2{
+	transition-duration: 2s;
+	text-align: center;
+	font-size: 230%;
+	background: red;
+	color: yellow;
+	width: 60%;
+	padding: 3%;
+	display: block;
+	margin: auto;
+	margin-top: -20px;
+	transform: rotate(7deg);
+	box-shadow: 0px 0px 40px inset black;
+	animation-name: titreMention;
+	animation-duration: 2s;
+}
+@keyframes titreMention{
+	100%{
+		transform: rotate(367deg);
+		transition-duration: 2s;
+	}
+}
+#mentions-legales2 h2:hover{
+	transition-duration: 1s;
+	transform: rotate(-7deg);
+}
+#mentions-legales2 h3{
+	font-size: 150%;
+	box-shadow: 0px 0px 40px inset black;
+	font-weight: bold;
+	font-family: 'Sniglet', cursive;
+	padding: 0px;
+	margin-bottom: -2px;
+	transform: rotate(-2deg);
+	/*background: #F3E2A9;*/
+	background: red;
+	color: yellow;
+	margin-left: -8%;
+	width: 60%;
+	padding: 3%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	transition-duration: 1s;
+}
+#mentions-legales2 h3:hover{
+	background: red;
+	color: yellow;
+	transform: rotate(5deg);
+	transition-duration: 1s;
+}
+#mentions-legales2 p{
+	font-family: 'Sniglet', cursive;
+}
+#mentions-legales2 p:hover{
+	background: none;
+    color: normal;
+    font-weight: normal;
+    font-size: 100%;
+    padding-left: 0px;
+}
+
+#mentions-legales2 table{
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#mentions-legales2 th{
+	border:1px solid;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#mentions-legales2 td{
+	border:1px solid;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 40px;
+	line-height: 40px;
+}
+#source-graphique a{
+	display: inline-block;
+	width: 100%;
+}
+
+@media screen and (max-width: 1050px){
+	#mentions-legales1{
+	width: 90%;
+	margin: 0;
+	margin: auto;
+	margin-top: 5%;
+	transform: rotate(0deg);
+	transition-duration: 1s;
+	}
+	#mentions-legales2 h3{
+		margin-left: -60px;
+		width: 110%;
+		transform: rotate(0deg);
+		padding-left: 60px;
+
+	}
+	#mentions-legales2 h2{
+		font-size: 150%;
+	}
+	#mentions-legales2{
+		transform: rotate(0deg);
+	}
+}
