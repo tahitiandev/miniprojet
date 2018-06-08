@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<urlset xmlns="https://cours-vault-tec.000webhostapp.com">
+
+  <url>
+    <loc>https://cours-vault-tec.000webhostapp.com</loc>
+    <lastmod>2018-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://cours-vault-tec.000webhostapp.com/accueil</loc>
+    <lastmod>2007-05-15</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+  <url>
+    <loc>https://cours-vault-tec.000webhostapp.com/contact</loc>
+    <lastmod>2007-06-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+  <url>
+    <loc>https://cours-vault-tec.000webhostapp.com/message</loc>
+    <lastmod>2007-06-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.1</priority>
+  </url>
+</urlset>

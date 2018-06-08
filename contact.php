@@ -10,7 +10,7 @@
 			
 			<h3 class='titre-h3'>Formulaire de contact</h3>
 
-			<form onsubmit="return confirmation(this)" method='POST' action='message.php' autocomplete='off'>
+			<form onsubmit="return confirmation(this)" method='POST' action='message' autocomplete='off'>
 
 				<div class='tag-input'>
 					

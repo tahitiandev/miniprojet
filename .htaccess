@@ -1,0 +1,13 @@
+# DEBUT
+RewriteEngine On
+
+# REWRITING
+RewriteRule ^accueil accueil.php
+RewriteRule ^contact contact.php
+RewriteRule ^message message.php
+RewriteRule ^tutoriel-n°([0-9a-z-A-Z]+) rubrique.php?id=$1
+RewriteRule ^description-n°([0-9a-z-A-Z]+) sous-rubrique.php?id=$1
+
+# REDIRECTION
+RewriteCond %{HTTP_HOST} ^www\.cours-vault-tec.000webhostapp.com(.*)$ [NC]
+RewriteRule (.*) http://cours-vault-tec.000webhostapp.com/$1 [R=301,L]

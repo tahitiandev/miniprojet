@@ -263,7 +263,6 @@ section {
  nav input[type=checkbox]:checked ~ ul{
      display: block;
  }
-
 /*-------------------------------------------------------------*/
 /*|                                                           |*/
 /*|*/            /*Partie responsive du MENU */             /*|*/

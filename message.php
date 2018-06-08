@@ -4,11 +4,11 @@ include('php/header.php');
 // Condition dans le cas ou la page est réactualisée
 if(empty($_POST['name'])){
 	
-	header('Location: contact.php');
+	header('Location: contact');
 }
 
 // F178 : Redirection vers page accueil après 50 secondes
-header('Refresh: 50; URL=accueil.php');
+header('Refresh: 50; URL=accueil');
 
 // Traitement des données envoyées par contact.php
 if(isset($_POST['envoyer'])){

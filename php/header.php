@@ -43,6 +43,17 @@
     	require 'form.php';
     ?>
 
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68095296-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-68095296-2');
+    </script>
+
 </head>
 <body onload="ChoixNum();">
 
@@ -58,7 +69,7 @@
         <input type="checkbox" id="menu-mobile" role="button"> 
         <ul>
           <!--Partie Accueil-->
-            <li class="menu-contact"><a href="accueil.php">Accueil</a>
+            <li class="menu-contact"><a href="accueil">Accueil</a>
                 <ul class="submenu">                
                 </ul>
             </li>
@@ -68,7 +79,7 @@
             $sqlmenu -> execute();
             while($menu = $sqlmenu -> fetch()){
 
-                echo '<li class="menu-html"><a href="rubrique.php?id='.$menu['idrub'].'">'.$menu['intitulerub'].'</a>';
+                echo '<li class="menu-html"><a href="tutoriel-n°'.$menu['idrub'].'">'.$menu['intitulerub'].'</a>';
 
 
                     $idrub = $menu['idrub'];
@@ -79,7 +90,7 @@
                     echo '<ul class="submenu">';
                     while($ssmenu = $sqlssmenu -> fetch()){
 
-                        echo '<li><a href="sous-rubrique.php?id='.$ssmenu['idart'].'">'.$ssmenu['codeart'].' - '.$ssmenu['titreart'].'</li>';
+                        echo '<li><a href="description-n°'.$ssmenu['idart'].'">'.$ssmenu['codeart'].' - '.$ssmenu['titreart'].'</a></li>';
 
                     }
                     echo '</ul>';
@@ -93,7 +104,7 @@
 
             ?>
 
-           <li class="menu-contact"><a href="contact.php">Contact</a></li>
+           <li class="menu-contact"><a href="contact">Contact</a></li>
            <li class="menu-contact" style="background: green;"><a target="_blank" href="backoffice">BACKOFFICE</a></li>
             <li class="menu-contact"></li> 
         </ul>
